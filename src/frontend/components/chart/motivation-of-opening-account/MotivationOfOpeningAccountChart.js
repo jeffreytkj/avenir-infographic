@@ -47,7 +47,7 @@ const MotivationOfOpeningAccountChart = (props) => {
                 </div>
             )
         }
-    
+
         return null
     }
 
@@ -70,8 +70,8 @@ const MotivationOfOpeningAccountChart = (props) => {
         )
     }
 
-	return (
-		<div className={cn(styles.wrapper, props.className)} style={props.style}>
+    return (
+        <div className={cn(styles.wrapper, props.className)} style={props.style}>
             <div>
                 <h2>
                     Reasons of Why People Want USD Account
@@ -102,7 +102,7 @@ const MotivationOfOpeningAccountChart = (props) => {
                 </ResponsiveContainer>
             </div>
         </div>
-	)
+    )
 }
 
 MotivationOfOpeningAccountChart.defaultProps = {

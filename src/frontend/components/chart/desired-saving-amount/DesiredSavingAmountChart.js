@@ -15,17 +15,17 @@ const DesiredSavingAmountChart = (props) => {
     const renderActiveShape = (props) => {
         const RADIAN = Math.PI / 180
         const {
-          cx,
-          cy,
-          midAngle,
-          innerRadius,
-          outerRadius,
-          startAngle,
-          endAngle,
-          fill,
-          payload,
-          percent,
-          value
+            cx,
+            cy,
+            midAngle,
+            innerRadius,
+            outerRadius,
+            startAngle,
+            endAngle,
+            fill,
+            payload,
+            percent,
+            value
         } = props
         const sin = Math.sin(-RADIAN * midAngle)
         const cos = Math.cos(-RADIAN * midAngle)
@@ -36,7 +36,7 @@ const DesiredSavingAmountChart = (props) => {
         const ex = mx + (cos >= 0 ? 1 : -1) * 22
         const ey = my
         const textAnchor = cos >= 0 ? 'start' : 'end'
-      
+
         return (
             <g>
                 {/* <text x={cx} y={cy} dy={8} textAnchor='middle' className='font-semibold' fill='grey'>
@@ -95,8 +95,8 @@ const DesiredSavingAmountChart = (props) => {
         )
     }
 
-	return (
-		<div className={cn(styles.wrapper, props.className)} style={props.style}>
+    return (
+        <div className={cn(styles.wrapper, props.className)} style={props.style}>
             <div>
                 <h2>
                     Desired Saving Amount
@@ -126,7 +126,7 @@ const DesiredSavingAmountChart = (props) => {
                 </ResponsiveContainer>
             </div>
         </div>
-	)
+    )
 }
 
 DesiredSavingAmountChart.defaultProps = {
